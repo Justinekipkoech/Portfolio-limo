@@ -1,0 +1,174 @@
+main.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0;
+}
+main.contact section.flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main.contact section.flexed div{
+    padding: 10px;
+    margin: 10px auto;
+}
+main.contact section.flexed div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main.contact h1{
+    color: var(--pri);
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+main.contact p{
+    color: var(--font);
+    letter-spacing: 0.6px;
+}
+main.contact .social-media-icons{
+    margin: 30px auto;
+}
+main.contact .form p{
+    margin: 8px;
+}
+main.contact .form input[type="text"], main.contact .form input[type="email"], main.contact .form textarea{
+    width: 96%;
+    height: 40px;
+    padding: 5px 8px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    outline: none;
+    background-color: var(--nav);
+    color: var(--pri);
+}
+main.contact .form input[type="text"]:focus, main.contact .form input[type="email"]:focus, main.contact .form textarea:focus{
+    outline: 2px solid var(--pri);
+}
+main.contact .form textarea{
+    height: 120px;
+    resize: none;
+}
+main.contact .form button{
+    padding: 10px 30px;
+    font-size: 19px;
+    background-color: var(--pri);
+    color: var(--nav);
+    border: none;
+    width: 96%;
+    box-sizing: border-box;
+    margin: 4px;
+    cursor: pointer;
+}
+main.contact .form button:hover{
+    opacity: 0.8;
+}
+main.contact .form button:active{
+    background-color: var(--nav);
+    color: var(--pri);
+}
+.custom-alert-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2d0f4632;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999999;
+    box-sizing: border-box;
+}
+.custom-alert-overlay.shown{
+    display: flex;
+}
+.custom-alert{
+    padding: 10px;
+    background-color: var(--font);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #32323232;
+    transition-duration: 10000s;
+}
+.custom-alert-overlay.shown .custom-alert{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    animation: startScaling 0.3s 1;
+    -webkit-animation: startScaling 0.3s 1;
+}
+@keyframes startScaling {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+.custom-alert-head{
+    font-size: 28px;
+    border-bottom: 2px solid #32323232;
+    padding: 0 0 2px 0;
+}
+.custom-alert-body{
+    margin: 12px 0 0 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+.custom-alert-body button{
+    padding: 8px 30px;
+    background-color: var(--nav);
+    color: var(--font);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.custom-alert-body button:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width: 900px) {
+    main.contact section.flexed{
+        flex-direction: column;
+    }
+}
