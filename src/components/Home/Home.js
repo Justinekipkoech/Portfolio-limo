@@ -8,11 +8,15 @@ class Home extends Component {
                 <section className="container home">
                     <section className="resizable">
                         <section>
+                        {/* <img src="images/about/NCPL.jpeg" alt="JUSTINE KIPKOECH LIMO"/> */}
+
                             <h3> Justine Kipkoech limo</h3>
                         </section>
                         <section>
                             <p> I am a Full Stack Developer.</p>
                             <p> I am an API Tester. </p>
+                            <p> I am a Fashion Stylist. </p>
+
 
                         </section>
                         <section className="social-media-icons">

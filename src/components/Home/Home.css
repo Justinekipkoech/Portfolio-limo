@@ -1,10 +1,11 @@
 section.container.home{
+    background-color: rgb(85, 134, 171);
     box-sizing: border-box;
     padding: 12px;
     width: 100%;
     min-height: 100vh;
     /* background: #1b171f5e url('./home2.jpeg') top center no-repeat; */
-    /* background-size: cover; */
+     background-size: cover; 
     background-blend-mode: overlay;
     position: -webkit-sticky;}
 section.container.home .resizable{

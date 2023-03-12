@@ -8,7 +8,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
     border-bottom: #f7f7f732 1px solid;
 }
 nav .logo{
@@ -37,9 +37,11 @@ nav .links{
     justify-content: center;
 }
 nav .link{
+    width:100%;
+    background-color:#B94E48;
     color: var(--font);
     text-decoration: none;
-    padding: 2px 10px;
+    padding: 10px 10px;
 }
 nav .link.active{
     color: var(--pri);
