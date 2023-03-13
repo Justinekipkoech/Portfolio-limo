@@ -33,7 +33,7 @@ class Contact extends Component {
             })
             return
         }
-        fetch('https://formsubmit.co/ajax/koechronix@gmail.com', {
+        fetch('https://formsubmit.co/ajax/justinelimoco98@gmail.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(this.state.formData)
@@ -45,8 +45,8 @@ class Contact extends Component {
                     msg: ''
                 },
                 alert: {
-                    head: "Successfully Sent",
-                    body: "Your message has been sent successfully, thanks for contacting me.",
+                    head: "Successful",
+                    body: "Your message has been sent successfully,thank you for contacting.",
                     shown: true
                 }
             })
@@ -85,7 +85,7 @@ class Contact extends Component {
                             </section>
                         </div>
                         <div className="form">
-                            <p>Use a valid email address, So I can reply back.</p>
+                            <p>Use a valid email address to get back to you.</p>
                             <input value={this.state.formData.name} onChange={this.handleChange} type="text" id="name" placeholder="Enter your name"/>
                             <input value={this.state.formData.email} onChange={this.handleChange} type="email" id="email" placeholder="Enter your email"/>
                             <textarea value={this.state.formData.msg} onChange={this.handleChange} id="msg" placeholder="Enter your message"/>
